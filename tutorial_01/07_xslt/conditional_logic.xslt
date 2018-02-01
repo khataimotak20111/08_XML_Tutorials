@@ -14,7 +14,30 @@
 		</head>
 		<body>
 			<xsl:for-each select="/items/item">
-
+				<xsl:if test="@available = 'no'">
+					<h1 class="no">
+						<img>
+							<xsl:attribute name="src">
+								<xsl:value-of select="photo" />
+							</xsl:attribute>
+						</img>
+						<xsl:value-of select="name" />
+						<xsl:text>....</xsl:text>
+						<xsl:value-of select="type" />
+					</h1>
+				</xsl:if>
+				<xsl:if test="@available = 'yes'">
+					<h1 class="yes">
+						<img>
+							<xsl:attribute name="src">
+								<xsl:value-of select="photo" />
+							</xsl:attribute>
+						</img>
+						<xsl:value-of select="name" />
+						<xsl:text>....</xsl:text>
+						<xsl:value-of select="type" />
+					</h1>
+				</xsl:if>
 			</xsl:for-each>
 		</body>
 		</html>

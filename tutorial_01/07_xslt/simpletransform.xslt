@@ -7,11 +7,12 @@
 		<html>
 		<head>
 			<title>New Herbal Tea Available!</title>
+			<link rel="stylesheet" type="text/css" href="simpletransform.css" />
 		</head>
 		<body>
 			<img src="photos/javaco_tea_logo.gif" />
 			<h1>
-
+				<xsl:value-of select="text()" />
 			</h1>
 		</body>
 		</html>

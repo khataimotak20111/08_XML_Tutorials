@@ -15,7 +15,7 @@
 		</head>
 		<body>
 			<xsl:for-each select="/items/item">
-
+    <xsl:sort select="@available" order="descending" />
             <xsl:choose>
                <xsl:when test="@available = 'no'">
                   <h1 class="unavail">
