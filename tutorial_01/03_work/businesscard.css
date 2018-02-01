@@ -8,3 +8,25 @@ BusinessCard {
 	margin: 5px;
 	text-align: left;
 }
+
+Nmae{
+	color: #DACFE5;
+	font-weight: bold;
+	font-size: 140%;
+	display: block;
+	margin-bottom: 3%; 
+}
+
+phone{
+	font-size: 90%;
+	color: aqua;
+	display: block;
+}
+
+email{
+	color: coral;
+	font-size: 90%;
+	font-weight: bold;
+	display: block;
+	margin-top: 3%;
+}
